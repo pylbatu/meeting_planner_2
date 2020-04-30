@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Meeting
+{% endblock %}
+
+{% block content %}
+<h1> Meeting details </h1>
+
+<p>
+    {{meeting}}
+</p>
+
+<h4>
+    <a href="{% url 'index' %}">
+        Go back to home
+    </a>
+</h4>
+{% endblock %}
